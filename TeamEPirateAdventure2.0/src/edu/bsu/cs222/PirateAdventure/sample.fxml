@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+
+<GridPane maxHeight="700" maxWidth="1000" minHeight="700" minWidth="1000" onKeyPressed="#MovKeyPressed" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-image: url(mainBackground.jpg);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.bsu.cs222.PirateAdventure.Controller">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="252.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="482.0" minWidth="10.0" prefWidth="482.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="220.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="230.0" minHeight="10.0" prefHeight="92.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="482.0" minHeight="10.0" prefHeight="482.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <GridPane fx:id="shipGridPane" alignment="CENTER" gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="477.0" style="-fx-background-image: url(shipMap.PNG);" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <GridPane.margin>
+            <Insets />
+        </GridPane.margin>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+        <Circle fx:id="shipPlayerCircle" onKeyPressed="#keyPushed" radius="21.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: url(PirateAdventureIcon.PNG);" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER" />
+        <Circle fx:id="blueCrewMember" layoutX="248.0" layoutY="253.0" onKeyPressed="#keyPushed" radius="21.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: url(blueCrewMember.PNG);" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+        <Circle fx:id="crewMember" layoutX="91.0" layoutY="406.0" onKeyPressed="#keyPushed" radius="21.0" stroke="BLACK" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" style="-fx-fill: url(crewMember.PNG);" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+        <ImageView fx:id="phase1X" fitHeight="52.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true"
+                   visible="false" GridPane.columnIndex="4" GridPane.rowIndex="2">
+            <Image url="@Resources/redX.png"/>
+        </ImageView>
+    </GridPane>
+    <GridPane fx:id="seaGridPane" alignment="CENTER" gridLinesVisible="true" layoutX="288.0" layoutY="150.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="477.0" style="-fx-background-image: url(mapTemplate.png);" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <opaqueInsets>
+            <Insets />
+        </opaqueInsets>
+        <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </padding>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Port Comenzar" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+        <Text layoutX="169.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ceaser's Bay" GridPane.columnIndex="15" GridPane.rowIndex="2" />
+        <Text layoutX="169.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Harbor of Bones" GridPane.rowIndex="11" />
+        <Text layoutX="169.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ivory Bluffs" GridPane.columnIndex="16" GridPane.rowIndex="19" />
+        <Text layoutX="169.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Oni's Island" GridPane.columnIndex="4" GridPane.rowIndex="18" />
+        <ImageView fitHeight="22.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="10">
+            <Image url="@Resources/dockRight.png" />
+        </ImageView>
+        <ImageView fitHeight="66.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnSpan="2" GridPane.rowIndex="8" GridPane.rowSpan="3">
+            <Image url="@Resources/island5.png" />
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="16" GridPane.rowIndex="6" GridPane.rowSpan="2">
+            <Image url="@Resources/dockDown.png" />
+        </ImageView>
+        <ImageView fitHeight="66.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="15" GridPane.columnSpan="3" GridPane.rowIndex="3" GridPane.rowSpan="3">
+            <Image url="@Resources/island4.png" />
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="14" GridPane.rowSpan="2">
+            <Image url="@Resources/dockUp.png" />
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="16" GridPane.rowSpan="2">
+            <Image url="@Resources/island3.png" />
+        </ImageView>
+        <ImageView fitHeight="66.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="19" GridPane.columnSpan="3" GridPane.rowIndex="18" GridPane.rowSpan="2" GridPane.valignment="TOP">
+            <Image url="@Resources/island2.png" />
+        </ImageView>
+        <ImageView fitHeight="22.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="3">
+            <Image url="@Resources/dockLeft.png" />
+        </ImageView>
+        <ImageView fitHeight="44.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="2">
+            <Image url="@Resources/island1.png" />
+        </ImageView>
+        <ImageView fitHeight="22.0" fitWidth="44.0" layoutX="125.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="17" GridPane.rowIndex="20">
+            <Image url="@Resources/dockLeft.png" />
+        </ImageView>
+        <ImageView fx:id="seaUser" fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" GridPane.rowIndex="10">
+            <Image url="@Resources/boatIconUp.png" />
+        </ImageView>
+        <ImageView fx:id="evilBoat" fitHeight="22.0" fitWidth="22.0" layoutX="235.0" layoutY="240.0" pickOnBounds="true" preserveRatio="true" rotate="180.0" GridPane.columnIndex="10" GridPane.rowIndex="9">
+            <Image url="@Resources/evilBoatIcon.png" />
+        </ImageView>
+        <ImageView fx:id="phase2X" fitHeight="22.0" fitWidth="22.0" layoutX="235.0" layoutY="218.0" pickOnBounds="true"
+                   preserveRatio="true" visible="false" GridPane.columnIndex="16" GridPane.rowIndex="7">
+            <Image url="@Resources/redX.png"/>
+        </ImageView>
+        <ImageView fx:id="phase3X" fitHeight="22.0" fitWidth="22.0" layoutX="367.0" layoutY="174.0" pickOnBounds="true"
+                   preserveRatio="true" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="10">
+            <Image url="@Resources/redX.png"/>
+        </ImageView>
+        <ImageView fx:id="phase4X" fitHeight="22.0" fitWidth="22.0" layoutX="83.0" layoutY="240.0" pickOnBounds="true"
+                   preserveRatio="true" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="14">
+            <Image url="@Resources/redX.png"/>
+        </ImageView>
+        <ImageView fx:id="endX" fitHeight="22.0" fitWidth="22.0" layoutX="104.0" layoutY="328.0" pickOnBounds="true"
+                   preserveRatio="true" visible="false" GridPane.columnIndex="17" GridPane.rowIndex="20">
+            <Image url="@Resources/redX.png"/>
+        </ImageView>
+    </GridPane>
+    <GridPane GridPane.columnIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Button maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#shipButtonPushed" prefHeight="50.0" prefWidth="100.0" style="-fx-background-image: url(woodSign.jpg)url(woodSign.jpg);" text="Ship" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button layoutX="80.0" layoutY="56.0" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" mnemonicParsing="false" onAction="#seaButtonPushed" prefHeight="50.0" prefWidth="100.0" style="-fx-background-image: url(woodSign.jpg);" text="Sea" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+    </GridPane>
+    <GridPane GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="214.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="157.0" minHeight="10.0" prefHeight="54.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="212.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-image: url(textFlowBackground.png);">
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <TextFlow fx:id="suppliesTextFlow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="195.0" prefWidth="258.0">
+                <padding>
+                    <Insets bottom="10.0" left="12.0" right="12.0" top="25.0" />
+                </padding>
+            </TextFlow>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-image: url(textFlowBackground.png);" GridPane.rowIndex="2">
+            <GridPane.margin>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </GridPane.margin>
+            <TextFlow fx:id="MonitorTextFlow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="192.0" prefWidth="258.0">
+                <padding>
+                    <Insets bottom="10.0" left="12.0" right="12.0" top="25.0" />
+                </padding>
+            </TextFlow>
+        </AnchorPane>
+    </GridPane>
+    <GridPane GridPane.columnIndex="1" GridPane.rowIndex="2">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Button fx:id="option1" alignment="CENTER" maxHeight="50.0" maxWidth="-Infinity" minHeight="50.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#button1Pressed" prefHeight="50.0" prefWidth="100.0" style="-fx-background-image: url(woodSign.jpg) url(woodSign.jpg);" text="1" textFill="WHITE" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+        <Button fx:id="option2" alignment="CENTER" maxHeight="50.0" maxWidth="-Infinity" minHeight="50.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#button2Pressed" prefHeight="50.0" prefWidth="100.0" style="-fx-background-image: url(woodSign.jpg) url(woodSign.jpg);" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Button>
+    </GridPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" style="-fx-background-image: url(textStreamBackground.png);" GridPane.columnIndex="2" GridPane.rowIndex="1">
+
+      <TextFlow fx:id="textStream" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="225.0">
+          <padding>
+              <Insets bottom="45.0" left="12.0" right="12.0" top="45.0" />
+          </padding>
+      </TextFlow>
+        <GridPane.margin>
+          <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+        </GridPane.margin>
+    </AnchorPane>
+   <TextField fx:id="phaseSelector" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#refreshPhase" prefHeight="25.0" prefWidth="100.0" promptText="Phase Selector" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <GridPane.margin>
+         <Insets />
+      </GridPane.margin>
+   </TextField>
+   <Button fx:id="playButton" alignment="CENTER" mnemonicParsing="false" onAction="#startStory" prefHeight="50.0" prefWidth="100.0" style="-fx-background-image: url(woodSign.jpg) url(woodSign.jpg);" text="Play" textAlignment="CENTER" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Button>
+</GridPane>

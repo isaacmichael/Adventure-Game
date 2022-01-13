@@ -1,0 +1,137 @@
+{
+  "Scene1": [
+    {
+      "SceneText": "Captain: Enemy Ship Approaching!\n             Man your Stations!"
+    }
+  ],
+  "Scene2": [
+    {
+      "SceneText": "Crew Member: Enemies Boarding!"
+    }
+  ],
+  "Scene3": [
+    {
+      "SceneText": "You: Captain! They're overpowering us; What do we do?"
+    }
+  ],
+  "Scene4": [
+    {
+      "SceneText": "Captain: Arrr, I have to do something drastic! If I die, You're the new captain."
+    }
+  ],
+  "Scene5": [
+    {
+      "SceneText": "You: No Captain!"
+    }
+  ],
+  "Scene6": [
+    {
+      "SceneText": "Because of the Captain's actions, ye and the crew were saved! But unfortunately, the captain got severely wounded while doing so. ye and the crew bring the captain to the nearest port for treatment, but he dies soon after landing."
+    }
+  ],
+  "Scene7": [
+    {
+      "SceneText": "ye go into the captain's room and see a partial map that the captain was trying to put together"
+    }
+  ],
+  "Scene8": [
+    {
+      "SceneText": "ye decide to honor the Captain by finishing what he started."
+    }
+  ],
+  "Scene9": [
+    {
+      "SceneText": "Crew member: So what now Captain?"
+    }
+  ],
+  "Scene10": [
+    {
+      "SceneText": "You: We... are going to finish this map to find the treasure \n         Let's sail!"
+    }
+  ],
+  "Scene11": [
+    {
+      "SceneText": "Objective: Go to the new port on the map and find the next map piece"
+    }
+  ],
+  "Scene12": [
+    {
+      "SceneText": "Objective: Go to the ship tab and go into the captain's quarters"
+    }
+  ],
+  "Scene13": [
+    {
+      "SceneText": "ye land on the island. ye walk into the bar and ask around about the map piece. The bartender points ye to a man sitting in the corner, says that he knows something about it."
+    }
+  ],
+  "Scene14": [
+    {
+      "SceneText": "You: I heard ye know of a map piece"
+    }
+  ],
+  "Scene15": [
+    {
+      "SceneText": "Uncle Jay: Aye, I do, I heard about what happened to yer old captain, he was an old friend of mine, he'd want ye to have this."
+    }
+  ],
+  "Scene16": [
+    {
+      "SceneText": "Uncle Jay gave ye a map piece! and a...parrot?"
+    }
+  ],
+  "Scene17": [
+    {
+      "SceneText": "Parrot: Squawk! Hi, I'm Exposition, but ye can just call me Parrot. I'm here to help!"
+    }
+  ],
+  "Scene18": [
+    {
+      "SceneText": "Uncle Jay: Good luck on your journey."
+    }
+  ],
+  "Scene19": [
+    {
+      "SceneText": "ye leave the bar and get on your ship. And get back on the sea to find the next map piece."
+    }
+  ],
+  "Scene20": [
+    {
+      "SceneText": "Objective: Go to new location on map"
+    }
+  ],
+  "Scene21": [
+    {
+      "SceneText": "ye land on the dock of the new island and are deciding where to g- \n Parrot: Squawk! Let's go into the famous Harbor of Bones wing restaurant!\n ye look at the sign, it reads, \"Welcome to the Bone Zone\","
+    }
+  ],
+  "Scene22": [
+    {
+      "SceneText": "ye walk in and see a picture of your old captain. He got his picture on the wall for passing their hot wing challenge. ye take the picture off the wall and feel something behind the frame. \n It's the next map piece!"
+    }
+  ],
+  "Scene23": [
+    {
+      "SceneText": "Ye arrive on Oni's island. \n Parrot: Squawk! Ye must go to Oni himself! \n Oni: Ahoy! Welcome to me island! Beautiful ain't it? What can I do ye for?"
+    }
+  ],
+  "Scene24": [
+    {
+      "SceneText": "You: We are here to locate a map, are ye familiar? \n Aye, I heard rumors of a treasure map around the island. I heard so much I went to find the map meself- But it was only a fragment. Its worthless, ye can have it if ye like."
+    }
+  ],
+  "Scene25": [
+    {
+      "SceneText": "Ye thank him and go on yer way, to find the treasure."
+    }
+  ],
+  "Scene26": [
+    {
+      "SceneText": "Ye did it! You found the Booty and honored your captain! Cheers!"
+    }
+  ],
+  "Scene27": [
+    {
+      "SceneText": "Objective: Get the treasure!"
+    }
+  ]
+}

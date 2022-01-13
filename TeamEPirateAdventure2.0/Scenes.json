@@ -1,0 +1,33 @@
+{
+  "Scene1": [
+    {
+      "SceneText": "Welcome to the Pirate Adventure game. Throughout your stay you will be prompted with a series of tests as you explore the map. If you choose incorrectly, you will be punished accordingly. If you are merciful and kind, you will recieve gifts to help you along your way. At the bottom left lies you supplies monitor, there you will find your consumption of materials for each movement on the map. At the top left you will see another pane with inventory that corresponds with the previous monitor. Should you run out of these supplies, you will likely die. Keep an eye out for these items."
+    }
+  ],
+  "Scene2": [
+  {
+    "SceneText": "Hello, I am the blue pirate"
+  }
+],
+  "Scene3": [
+    {
+      "SceneText": "Hello, I am a reg crew member"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
